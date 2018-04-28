@@ -1,0 +1,7 @@
+{   
+  "extend": "standard",
+  "plugins": [
+    "html"
+  ],
+  "parser": "babel-eslint"    
+}
