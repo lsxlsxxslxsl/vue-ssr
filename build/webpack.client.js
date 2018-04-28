@@ -39,7 +39,7 @@ if(isDev){ // 开发环境
 						'css-loader',
 						{
 							loader: 'postcss-loader',
-							option: {
+							options: {
 								sourceMap: true,
 							}
 						},
@@ -73,7 +73,7 @@ if(isDev){ // 开发环境
 							'css-loader',
 							{
 								loader: 'postcss-loader',
-								option: {
+								options: {
 									sourceMap: true,
 								}
 							},
