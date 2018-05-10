@@ -1,7 +1,33 @@
-{   
-  "extend": "standard",
-  "plugins": [
-    "html"
+{
+  "presets": [
+    "stage-1"
   ],
-  "parser": "babel-eslint"    
+  "plugins": [
+    "transform-vue-jsx",
+    "syntax-dynamic-import"
+  ],
+  "env": {
+    "browser": {
+      "presets": [
+        [
+          "env", {
+            "targets": {
+              "browsers": ["last 2 versions", "safari >= 7"]
+            }
+          }
+        ]
+      ]
+    },
+    "node": {
+      "presets": [
+        [
+          "env", {
+            "targets": {
+              "node": "current"
+            }
+          }
+        ]
+      ]
+    }
+  }
 }
